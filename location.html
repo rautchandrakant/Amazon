@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="locationstyle.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+            <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search for Products, Appliances & More..." class="search-input">
+                <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <div class="nav-signin border">
+                <div class="loginIcon">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                </div>
+                <p class="add-Login"><a style="color: white; text-decoration: none;" href="./loginpage.html">Login</a></p>
+            </div>
+  
+            <div class="nav-cart border">
+                <div class="cartIcon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="add-cart">Cart</p>
+            </div>
+  
+        </div>
+
+
+
+       <!-- LOCATION PAGE -->
+
+  <h2 class="loc-top"><center>Location Details</center></h2>
+
+    <form class="loc-container">
+        <div>
+          <label for="state"><b style="color: rgb(250, 100, 7);">Choose a State: </b></label>
+            <select name="state" id="state">
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Gujrat">Gujrat</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Punjab">Punjab</option>
+            </select>
+            <br><br>
+          <label for="city"><b style="color: rgb(250, 100, 7);">Choose a City:   </b></label>
+            <select name="city" id="city">
+               <option value="Pune">Pune</option>
+               <option value="Mumbai">Mumbai</option>
+               <option value="Banglore">Banglore</option>
+               <option value="Hyderabad">Hyderabad</option>
+               <option value="Chennai">Chennai</option>
+               <option value="Surat">Surat</option>
+            </select>
+               <br><br>
+          <label for="Pin-Code"><b style="color: rgb(250, 100, 7);">Enter P-Code: </b></label>
+            <input type="text" name="pin" pattern="[0-9]{4}" maxlength="4">
+              <br><br>
+           <button type="submit">Submit</button>
+        </div>
+    </form>
+
+
+</body>
+</html>
